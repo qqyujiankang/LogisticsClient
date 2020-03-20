@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PersonalDataActivity">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/personal_data_title" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/fl_set_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_white"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/query_right_back"
+                    android:layout_gravity="end|center_vertical"/>
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    style="@style/CircleCardViewStyle"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:layout_gravity="start|center_vertical">-->
+
+                    <ImageView
+                        android:id="@+id/iv_set_avatar"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="start|center_vertical"
+                        android:src="@drawable/ic_head_placeholder" />
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+            </FrameLayout>
+            <View
+                style="@style/HorizontalLineStyle" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_set_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="@string/personal_data_name"
+                app:bar_rightIcon="@drawable/ico_go_black"/>
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_set_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="账号与安全"
+                app:bar_rightIcon="@drawable/ico_go_black"/>
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_set_yjfk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bar_leftText="意见反馈"
+                app:bar_rightIcon="@drawable/ico_go_black"/>
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_set_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:bar_leftText="@string/personal_data_address"
+                app:bar_rightHint="@string/personal_data_address_hint"
+                app:bar_rightIcon="@drawable/ico_go_black"
+                app:bar_rightText="广东省广州市天河区" />
+
+            <com.hjq.widget.layout.SettingBar
+                android:id="@+id/sb_set_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:bar_leftText="@string/personal_data_phone"
+                app:bar_rightHint="@string/personal_data_phone_hint"
+                app:bar_rightIcon="@drawable/ico_go_black" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        app:contentPaddingLeft="10dp"
+        app:contentPaddingRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="退出登录"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

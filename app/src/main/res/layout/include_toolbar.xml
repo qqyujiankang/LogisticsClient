@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/title_bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_back"
+        android:background="@drawable/title_bg"
+        style="@style/ActivityToolBar">
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/ce_search"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/bom_serch_sel"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/edittxt_bg"
+            android:hint="输入地点"
+            android:inputType="text"
+            android:singleLine="true"
+            app:regexType="nonnull" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="搜索"
+            android:textColor="@color/textColor"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

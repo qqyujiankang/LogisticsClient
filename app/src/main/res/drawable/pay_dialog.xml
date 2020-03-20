@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 默认圆角按钮样式 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/white" />
+    <corners  android:topLeftRadius="8dp" android:topRightRadius="8dp" />
+<!--    <gradient android:startColor="#ffd002" android:endColor="#ffcd1f" android:angle="0"/>-->
+
+
+
+
+
+</shape>

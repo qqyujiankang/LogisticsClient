@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pay_dialog"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.dialog.CopyDialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="选择支付方式"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:gravity="center"/>
+    <View
+        style="@style/HorizontalLineStyle"/>
+
+    <LinearLayout
+        android:id="@+id/pay_ll_wx"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pay_wx"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="@color/gray"
+            android:textSize="14dp"/>
+        <ImageView
+            android:id="@+id/pay_wx_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pay_sel"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"/>
+
+    <LinearLayout
+        android:id="@+id/pay_ll_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pay_zfb"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="支付宝"
+            android:textColor="@color/gray"
+            android:textSize="14dp"/>
+        <ImageView
+            android:id="@+id/pay_zfb_sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/pay_sel"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pay_cancl"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:contentPaddingLeft="10dp"
+            app:contentPaddingRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="稍后付款"
+                android:textColor="@color/textOrage"
+                android:textSize="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pay"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            app:cardBackgroundColor="#ffd002"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:contentPaddingLeft="10dp"
+            app:contentPaddingRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="确认付款"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
